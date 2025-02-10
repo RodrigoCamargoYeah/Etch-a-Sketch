@@ -10,9 +10,16 @@ body {
     height: 800px;
     box-sizing: border-box;
 }
-#squares {
+.squares {
     flex: 1 1 6.25%;
     height: 6.25%;
-    border: 1px solid black;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+.hovered {
+    flex: 1 1 6.25%;
+    height: 6.25%;
+    border: 1px solid #000;
+    background-color: aqua;
     box-sizing: border-box;
 }
