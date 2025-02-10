@@ -1,8 +1,18 @@
+body {
+    text-align: center;
+    justify-content: center;
+}
 #juego{
+    margin: auto;
     display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 800px;
+    box-sizing: border-box;
 }
 #squares {
+    flex: 1 1 6.25%;
+    height: 6.25%;
     border: 1px solid black;
-    width: 50px;
-    height: 50px;
+    box-sizing: border-box;
 }
