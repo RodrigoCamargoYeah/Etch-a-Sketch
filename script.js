@@ -1,15 +1,17 @@
 const juego = document.querySelector('#juego');
 const btn = document.querySelector('button');
 
+function getRandomRGB() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    return `rgb(${r}, ${g}, ${b})`;
+}
+
 function hoverSquares(squares) {
     squares.addEventListener("mouseover", () => {
-        squares.classList.remove("squares");
-        squares.classList.add("hovered");
-    })
-    squares.addEventListener("mouseout", () => {
-        squares.classList.remove("hovered");
-        squares.classList.add("squares");
-    })
+        squares.style.backgroundColor = getRandomRGB();
+    });
 }
 
 function generateSquare() {
@@ -34,7 +36,7 @@ btn.addEventListener('click', () => {
         gridSize = 100;
     }
     createGrid(gridSize);
-})
+});
 
 createGrid(16);
 

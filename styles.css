@@ -16,12 +16,5 @@ body {
     height: 50px;
     border: 2px solid #000;
     box-sizing: border-box;
-    transition: background-color 0.3s;
 }
-.hovered {
-    width: 50px;
-    height: 50px;
-    border: 1px solid #000;
-    background-color: aqua;
-    box-sizing: border-box;
-}
+
